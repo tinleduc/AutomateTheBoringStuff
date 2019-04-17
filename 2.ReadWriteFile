@@ -1,0 +1,80 @@
+Files and File Paths
+    File has two key properties: a filename and a path.
+
+import os
+os.path.join('usr', 'bin', 'spam')
+'usr\\bin\\spam' (Window)
+'usr/bin/spam' (OS X, Linux)
+
+
+The current Working Directory
+or cwd
+import os
+os.getcwd()
+
+Absolute and Relative Paths
+
+An Absolute path, which always begins with the root folder
+A relative path, which is relative to the program's current working directory
+
+Creating new folder with os.makedirs()
+
+import os 
+os.makedirs('C:\\delicious\\walnut\abc')
+
+The OS.PATH module
+
+HANDLING ABSOLUTE AND RELATIVE Paths
+
+
+FINDING FILE SIZES AND FOLDER CONTENTS
+
+
+CHECKING PATH VALIDITY
+
+
+THE FILE READING/WRITING PROCESS
+
+OPENING DILES WITH THE OPEN() FUNCTION
+
+
+READING THE CONTENTS OF Files
+
+WRITING TO FILES 
+
+SAVING VARIABLES WITH THE SHELVE MODULE 
+
+SAVING VARIABLES WITH THE PPRINT.PFORMAT() FUNCTION
+
+PROJECT: GENERATING RANDOM QUIZ FILES 
+
+STEP 1: STORE THE QUIZ DATA IN A DICTIONARY
+
+STEP 2: CREATE THE QUIZ FILE AND SHUFFLE THE QUESTION ORDER
+
+STEP 3: CREATE THE ANSWER OPTIONS
+
+STEP 4: WRITE CONTENT TO THE QUIZ AND ANSWER KEY FILES
+
+PROJECT: MULTICLIPBOARD
+
+
+STEP 1: COMMENTS AND SHELF STETUP
+
+STEP 2: SAVE CLIPBOARD CONTENT WITH A KEYWORD
+
+STEP 3: LIST KEYWORD AND LOAD A KEYWORD'S CONTENT
+
+SUMMARY
+
+PRACTCE QUESTION
+
+
+
+
+
+
+
+
+
+
