@@ -1,3 +1,2 @@
 Link documents
-
-automatetheboringstuff.com
+https://automatetheboringstuff.com/
