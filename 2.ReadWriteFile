@@ -7,17 +7,17 @@ os.path.join('usr', 'bin', 'spam')
 'usr/bin/spam' (OS X, Linux)
 
 
-The current Working Directory
+THE CURRENT WORKING DIRECTORY
 or cwd
 import os
 os.getcwd()
 
-Absolute and Relative Paths
+ABSOLUTE AND RELATIVE PATHS
 
 An Absolute path, which always begins with the root folder
 A relative path, which is relative to the program's current working directory
 
-Creating new folder with os.makedirs()
+CREATING NEW FOLDERS WITH OS.MAKEDIRS()
 
 import os 
 os.makedirs('C:\\delicious\\walnut\abc')
@@ -25,26 +25,44 @@ os.makedirs('C:\\delicious\\walnut\abc')
 The OS.PATH module
 
 HANDLING ABSOLUTE AND RELATIVE Paths
+    Calling os.path.abspath(path) will return string of the absolute path of the
+    argument. This is an easy way to convert a relative path into an absolute one 
+    Calling os.path.isabs(path) will return True if the argument is an absolute
+    path False if it is relative path
+    Calling os.path.relpath(path,start) will return a string of a relative path from 
+    the start path to path. If start is not provided, the current working directory is used as the start path 
 
+    os.path.abspath('.')
+    os.path.abspath('.\\Scripts')
+    os.path.isabs('.')
+    os.path.isabs(os.path.abspath('.'))
 
 FINDING FILE SIZES AND FOLDER CONTENTS
+    Calling os.path.getsize(path) will return the size in bytes of the file in the path arguments
 
+    Calling os.listdir(path) will return a list filename string for each file in the path argument
+    Note that this function is in the os module not os.path
+
+>>> os.path.getsize('C:\\Window\\System32\\cals.exe')
+
+>>> os.listdir('C:\\Window\\System32)
 
 CHECKING PATH VALIDITY
-
+     Calling os.path.exists(path)
+     Calling os.path.isfile(path)
+     Calling os.path.isdir(path)
 
 THE FILE READING/WRITING PROCESS
 
-OPENING DILES WITH THE OPEN() FUNCTION
+    OPENING DILES WITH THE OPEN() FUNCTION
 
+    READING THE CONTENTS OF Files
 
-READING THE CONTENTS OF Files
+    WRITING TO FILES 
 
-WRITING TO FILES 
+    SAVING VARIABLES WITH THE SHELVE MODULE 
 
-SAVING VARIABLES WITH THE SHELVE MODULE 
-
-SAVING VARIABLES WITH THE PPRINT.PFORMAT() FUNCTION
+    SAVING VARIABLES WITH THE PPRINT.PFORMAT() FUNCTION
 
 PROJECT: GENERATING RANDOM QUIZ FILES 
 
@@ -57,7 +75,6 @@ STEP 3: CREATE THE ANSWER OPTIONS
 STEP 4: WRITE CONTENT TO THE QUIZ AND ANSWER KEY FILES
 
 PROJECT: MULTICLIPBOARD
-
 
 STEP 1: COMMENTS AND SHELF STETUP
 
